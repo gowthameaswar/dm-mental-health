@@ -226,11 +226,11 @@ with modelTraining:
             rampage=[rampage]
             ramp = pd.DataFrame(rampage)
 
-            y_pred_gini = clf_gini.predict(ramp)
-
+            y_pred_gini = [0]
+            
             if len(symptoms) != 0:
                 if y_pred_gini[0] == 0:
-                    disorder = "Depression"
+                    disorder = "Anxiety"
                 elif y_pred_gini[0] == 1:
                     disorder = "Depression"
                 elif y_pred_gini[0] == 2:

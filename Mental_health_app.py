@@ -14,7 +14,7 @@ Doctor = st.container()
 
 with header:
 
-    st.image("https://static.vecteezy.com/system/resources/previews/012/141/539/original/mental-health-logo-isolated-white-background-free-vector.jpg")
+    st.image("https://static.vecteezy.com/system/resources/previews/012/141/539/original/mental-health-logo-isolated-white-background-free-vector.jpg", width=300)
    
 
 

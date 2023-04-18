@@ -14,7 +14,7 @@ Doctor = st.container()
 
 with header:
 
-    st.image("https://en.horizonnb.ca/media/953975/horizon_logo_black.jpg" , use_column_width=True)
+    st.image("https://static.vecteezy.com/system/resources/previews/012/141/539/original/mental-health-logo-isolated-white-background-free-vector.jpg" , use_column_width=True)
    
 
 

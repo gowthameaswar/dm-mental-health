@@ -101,7 +101,7 @@ with modelTraining:
     progressBar = st.progress(prog)
     
     for i in range(0,3):
-        if word == 'yes':
+        if word == 'Yes':
             
             answers.update({maxword : word})
             prog+=25
@@ -121,7 +121,7 @@ with modelTraining:
             
             rflag+=1
 
-        elif word == 'no':
+        elif word == 'No':
             answers.update({maxword : word})
             prog+=25
             progressBar.progress(prog)
@@ -135,21 +135,21 @@ with modelTraining:
                 question = " Have you "
             word = sel.selectbox("Question "+str(i+2) +question +maxword+" all the time" ,("-" , "Yes" , "No") , 0 , help = "Answer these")
             rflag+=1
-    if word == 'yes':
+    if word == 'Yes':
         answers.update({maxword : word})
 
         prog+=24
         progressBar.progress(prog)
         symptoms.append(maxword)
         tempwordlist = getInList(maxword ,tempwordlist)
-    elif word == 'no':
+    elif word == 'No':
         answers.update({maxword : word})
         prog+=24
         progressBar.progress(prog)
         tempwordlist = getNotInList(maxword ,tempwordlist)
 
 
-    if rflag == 4 and word == 'yes' or word == "no":            
+    if rflag == 4 and word == 'Yes' or word == "No":            
         progressBar.empty()
         bel.empty()
 

@@ -226,7 +226,7 @@ with modelTraining:
             rampage=[rampage]
             ramp = pd.DataFrame(rampage)
 
-            y_pred_gini = [0]
+            y_pred_gini = clf_gini.predict(ramp)
             
             if len(symptoms) != 0:
                 if y_pred_gini[0] == 0:

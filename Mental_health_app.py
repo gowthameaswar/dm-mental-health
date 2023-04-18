@@ -6,7 +6,7 @@ from mlxtend.frequent_patterns import fpgrowth
 from sklearn.preprocessing import LabelEncoder
 from sklearn.tree import DecisionTreeClassifier
 
-st.set_page_config(page_title="Health app",page_icon="https://static.vecteezy.com/system/resources/previews/012/141/539/original/mental-health-logo-isolated-white-background-free-vector.jpg")
+st.set_page_config(page_title="Mental Health app",page_icon="https://static.vecteezy.com/system/resources/previews/012/141/539/original/mental-health-logo-isolated-white-background-free-vector.jpg")
 header = st.container()
 dataset = st.container()
 modelTraining = st.container()

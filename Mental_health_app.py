@@ -96,7 +96,7 @@ with modelTraining:
     sel = st.table()
     answers = dict()
     
-    word = sel.selectbox("Question 1 : Do you have a stressful memory that keeps popping up all the time?" ,("-" , "yes" , "no") , 0, help = "Answer these questions")
+    word = sel.selectbox("Question 1 : Do you have a stressful memory that keeps popping up all the time?" ,("-" , "Yes" , "No") , 0, help = "Answer these")
 
     prog=1  
     progressBar = st.progress(prog)
@@ -118,7 +118,7 @@ with modelTraining:
                 question = " Do you "
             else:
                 question = " Have you "
-            word = sel.selectbox("Question "+str(i+2) + question +maxword+" all the time" ,("-" , "yes" , "no") , 0 , help = "test")
+            word = sel.selectbox("Question "+str(i+2) + question +maxword+" all the time" ,("-" , "Yes" , "No") , 0 , help = "Answer these")
             
             rflag+=1
 
@@ -134,7 +134,7 @@ with modelTraining:
                 question = " Do you "
             else:
                 question = " Have you "
-            word = sel.selectbox("Question "+str(i+2) +question +maxword+" all the time" ,("-" , "yes" , "no") , 0 , help = "test")
+            word = sel.selectbox("Question "+str(i+2) +question +maxword+" all the time" ,("-" , "Yes" , "No") , 0 , help = "Answer these")
             rflag+=1
     if word == 'yes':
         answers.update({maxword : word})
@@ -175,7 +175,7 @@ with modelTraining:
             if j not in frequentSymptoms:
                 frequentSymptoms.append(j)
     
-    Demo = st.button("Doctor Demo")
+    Demo = st.button("View results")
     if Demo:
         sel.empty()
         progressBar.empty()

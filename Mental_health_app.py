@@ -96,7 +96,7 @@ with modelTraining:
     sel = st.table()
     answers = dict()
     
-    word = sel.selectbox("Question 1 : Do you "+maxword+" all the time" ,("-" , "yes" , "no") , 0, help = "test")
+    word = sel.selectbox("Question 1 : Do you "+maxword+" all the time" ,("-" , "yes" , "no") , 0, help = "Answer these questions")
 
     prog=1  
     progressBar = st.progress(prog)

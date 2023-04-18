@@ -230,7 +230,7 @@ with modelTraining:
 
             if len(symptoms) != 0:
                 if y_pred_gini[0] == 0:
-                    disorder = "Anxiety"
+                    disorder = "Depression"
                 elif y_pred_gini[0] == 1:
                     disorder = "Depression"
                 elif y_pred_gini[0] == 2:

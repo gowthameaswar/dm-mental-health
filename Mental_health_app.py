@@ -81,7 +81,7 @@ with modelTraining:
 
 
     col_1 , col_2 =tel_col1.columns(2)
-    fName =  col_1.text_input("Enter Your Fist Name : ")
+    fName =  col_1.text_input("Enter Your First Name : ")
     lName =  col_2.text_input("Enter Your Last Name : ")
     Age =  col_1.text_input("Enter Your Age     : ")
     ticket =  col_2.text_input("Enter Your Booking Number     : ")
@@ -133,7 +133,7 @@ with modelTraining:
                 question = " Do you "
             else:
                 question = " Have you "
-            word = sel.selectbox("Question "+str(i+2) +question +maxword+" all the time" ,("-" , "Yes" , "No") , 0 , help = "Answer these")
+            word = sel.selectbox("Question "+str(i+2) +":"+question +maxword+" all the time" ,("-" , "Yes" , "No") , 0 , help = "Answer these")
             rflag+=1
     if word == 'Yes':
         answers.update({maxword : word})
